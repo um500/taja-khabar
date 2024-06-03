@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taja Khabar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav-menu">
+        <div class="main-nav container flex">
+            <a href="#" class="company-logo">
+                <h2>Taja Khabar</h2>
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="cricket" onClick="onNavItemClick('cardscontainer')"><a href="#cardscontainer"></a>Cricket</li>
+                    <li class="hover-link nav-item" id="india" onClick="onNavItemClick('cardscontainer1')"><a href="#cardscontainer1"></a>India</li>
+                    <li class="hover-link nav-item" id="technology" onClick="onNavItemClick('cardscontainer2')"><a href="#cardscontainer2"></a>Technology</li>
+                    <li class="hover-link nav-item" id="politics" onClick="onNavItemClick('cardscontainer3')"><a href="#cardscontainer3"></a>Politics</li>
+                    <li class="hover-link nav-item" id="education" onClick="onNavItemClick('cardscontainer4')"><a href="#cardscontainer4"></a>Education</li>
+                    <li class="hover-link nav-item" id="job" onClick="onNavItemClick('cardscontainer5')"><a href="#cardscontainer5"></a>Job</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" class="news-input" id="search-text" placeholder="e.g. Science">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cardscontainer">
+            <div class="card">
+                <a href="https://www.sportingnews.com/in/cricket/news/who-won-cricket-world-cup-2023/5128294cea33adba6745d37d">
+                    <div class="card-header">
+                        <img src="./images/crek1.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Cricket World Cup 2023</h3>
+                        <h6 class="news-source">Australia Triumphs in Ahmedabad</h6>
+                        <p class="news-desc">Australia defeated India by six wickets in the 2023 World Cup final held at the Narendra Modi Stadium in Ahmedabad...</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.msn.com/en-us/sports/other/everything-to-know-about-2024-t20-cricket-world-cup-full-schedule-matches-tickets-where-to-watch/ar-BB1nr1kf">
+                    <div class="card-header">
+                        <img src="./images/ind2.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Cricket World Cup 2024</h3>
+                        <h6 class="news-source">Everything to know about 2024 T20 Cricket World Cup</h6>
+                        <p class="news-desc">A giant cricket ball is seen installed at a marketplace to mark 100 days to go for the ICC Men's T20 World Cup in Miami, Florida, on February 22, 2024.....</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://symbolsage.com/greatest-religious-festivals/">
+                    <div class="card-header">
+                        <img src="./images/crek3.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Football</h3>
+                        <h6 class="news-source">Ex-football chairman takes over county cricket club</h6>
+                        <p class="news-desc">A former chairman of football's Premier League has been elected to take on the same role for a county cricket team.....</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://atasteofaz.com/the-farm-at-south-mountain/">
+                    <div class="card-header">
+                        <img src="./images/ind4.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>T20 World cup </h3>
+                        <h6 class="news-source">T20 Cricket World Cup impacts traffic around Nassau County</h6>
+                        <p class="news-desc">The first official matches of the T20 Cricket World Cup get underway on Long Island on Monday....</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.sportingnews.com/in/cricket/news/who-won-cricket-world-cup-2023/5128294cea33adba6745d37d">
+                    <div class="card-header">
+                        <img src="./images/crek1.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Cricket World Cup 2023</h3>
+                        <h6 class="news-source">Australia Triumphs in Ahmedabad</h6>
+                        <p class="news-desc">Australia defeated India by six wickets in the 2023 World Cup final held at the Narendra Modi Stadium in Ahmedabad...</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.msn.com/en-us/sports/other/everything-to-know-about-2024-t20-cricket-world-cup-full-schedule-matches-tickets-where-to-watch/ar-BB1nr1kf">
+                    <div class="card-header">
+                        <img src="./images/ind2.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Cricket World Cup 2024</h3>
+                        <h6 class="news-source">Everything to know about 2024 T20 Cricket World Cup</h6>
+                        <p class="news-desc">A giant cricket ball is seen installed at a marketplace to mark 100 days to go for the ICC Men's T20 World Cup in Miami, Florida, on February 22, 2024.....</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://symbolsage.com/greatest-religious-festivals/">
+                    <div class="card-header">
+                        <img src="./images/crek3.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Football</h3>
+                        <h6 class="news-source">Ex-football chairman takes over county cricket club</h6>
+                        <p class="news-desc">A former chairman of football's Premier League has been elected to take on the same role for a county cricket team.....</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://atasteofaz.com/the-farm-at-south-mountain/">
+                    <div class="card-header">
+                        <img src="./images/ind4.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>T20 World cup </h3>
+                        <h6 class="news-source">T20 Cricket World Cup impacts traffic around Nassau County</h6>
+                        <p class="news-desc">The first official matches of the T20 Cricket World Cup get underway on Long Island on Monday....</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="card">
+                <a href="https://atasteofaz.com/the-farm-at-south-mountain/">
+                    <div class="card-header">
+                        <img src="./images/ind4.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>T20 World cup </h3>
+                        <h6 class="news-source">T20 Cricket World Cup impacts traffic around Nassau County</h6>
+                        <p class="news-desc">The first official matches of the T20 Cricket World Cup get underway on Long Island on Monday....</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="cards-container container flex" id="cardscontainer1">
+            <div class="card">
+                <a href="https://www.nature.com/articles/nature14324">
+                    <div class="card-header">
+                        <img src="./images/ind1.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Land of Location and Diversity</h3>
+                        <h6 class="news-source">A Strategic Gem</h6>
+                        <p class="news-desc">India occupies a strategic location in South Asia, cradled by the majestic Himalayas in the north...</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://hogghistory.org/education-blog/discovering-rich-tapestry-human-history-250-essay-topics">
+                    <div class="card-header">
+                        <img src="./images/ind2.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>A Tapestry of Rich History</h3>
+                        <h6 class="news-source">Millennia in the Making</h6>
+                        <p class="news-desc">Steeped in a rich and ancient history spanning millennia, India boasts a vibrant cultural identity....</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://symbolsage.com/greatest-religious-festivals/">
+                    <div class="card-header">
+                        <img src="./images/ind3.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>A Celebration of Religions</h3>
+                        <h6 class="news-source">A Land of Tolerance</h6>
+                        <p class="news-desc">India is a beacon of religious tolerance, where diverse faiths flourish in harmony....</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://atasteofaz.com/the-farm-at-south-mountain/">
+                    <div class="card-header">
+                        <img src="./images/ind4.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>A Culinary Paradise</h3>
+                        <h6 class="news-source">A Symphony of Flavors</h6>
+                        <p class="news-desc">Indian cuisine is a captivating blend of flavors, aromas, and spices, offering a unique culinary experience....</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.visualcapitalist.com/a-world-of-languages/">
+                    <div class="card-header">
+                        <img src="./images/ind1.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>A Hub of Languages</h3>
+                        <h6 class="news-source">A Tapestry of Tongue</h6>
+                        <p class="news-desc">India is a land of incredible linguistic diversity, with Hindi as the official language and countless...</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://smartours.com/blog/travel-inspiration/10-epic-landscapes-a-guide-to-the-worlds-most-beautiful-places/">
+                    <div class="card-header">
+                        <img src="./images/ind1.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>A Land of Breathtaking Beauty</h3>
+                        <h6 class="news-source">Nature's Playground</h6>
+                        <p class="news-desc">From the snow-capped Himalayas to pristine beaches, pen_spark ...</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="link7.html">
+                    <div class="card-header">
+                        <img src="./images/ind2.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>A Cradle of Arts and Crafts</h3>
+                        <h6 class="news-source">A Legacy of Exquisite Craftsmanship</h6>
+                        <p class="news-desc">India has a long and glorious tradition of arts and crafts,...</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="link8.html">
+                    <div class="card-header">
+                        <img src="./images/ind3.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>A Flourishing Democracy</h3>
+                        <h6 class="news-source">The World's Largest Democracy</h6>
+                        <p class="news-desc">India is the world's largest democracy, where elections...</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="link9.html">
+                    <div class="card-header">
+                        <img src="./images/ind4.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>A Land of Constant Change</h3>
+                        <h6 class="news-source">Ancient and Modern</h6>
+                        <p class="news-desc">India is a nation in constant evolution, where ancient traditions coexist...</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+
+        <div class="cards-container container flex" id="cardscontainer2">
+            <div class="card">
+                <a href="https://gemini.google.com/app">
+                    <div class="card-header">
+                        <img src="./images/ai.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Artificial Intelligence Advancements</h3>
+                        <h6 class="news-source">Breakthroughs in AI Technology </h6>
+                        <p class="news-desc">AI technology continues to evolve, with advancements in natural language processing, computer vision, and...</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.cloudcomputing-news.net/news/2024/jun/03/quantum-computing-is-set-to-destroy-crypto-could-cloud-based-quantum-proof-encryption-be-the-solution/">
+                    <div class="card-header">
+                        <img src="./images/quantam.jpg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Quantum Computing</h3>
+                        <h6 class="news-source">Quantum Supremacy Achieved</h6>
+                        <p class="news-desc">Researchers are making strides in quantum computing, with companies like Google and IBM leading....</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.zawya.com/en/press-release/companies-news/hpe-simplifies-deployment-of-private-cellular-networks-with-launch-of-hpe-aruba-networking-enterprise-private-5g-gqkk927h">
+                    <div class="card-header">
+                        <img src="./images/5g1.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>5G Network Expansion</h3>
+                        <h6 class="news-source">Global Rollout of 5G</h6>
+                        <p class="news-desc">The deployment of 5G networks is expanding globally, offering faster internet speeds, lower latency,....</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://investorplace.com/2024/06/3-underappreciated-cybersecurity-stocks-to-buy-now/">
+                    <div class="card-header">
+                        <img src="./images/cyber.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Cybersecurity Threats and Solutions</h3>
+                        <h6 class="news-source">Increasing Cyber Threats</h6>
+                        <p class="news-desc">As cyber threats grow more sophisticated, companies and governments are investing heavily...</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://cointelegraph.com/news/blockchain-helps-harvesting-better-avocados-in-kenya-heres-how">
+                    <div class="card-header">
+                        <img src="./images/block.jpg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Blockchain and Cryptocurrencies</h3>
+                        <h6 class="news-source">The Rise of Digital Currencies</h6>
+                        <p class="news-desc">Blockchain technology and cryptocurrencies are transforming the financial landscape,...</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.microsoft.com/en-in/sustainability?ef_id=_k_276745786f7217828ad0232583cd121e_k_&OCID=AIDcmm36oobecd_SEM__k_276745786f7217828ad0232583cd121e_k_&msclkid=276745786f7217828ad0232583cd121e">
+                    <div class="card-header">
+                        <img src="./images/sub.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Sustainable Technology</h3>
+                        <h6 class="news-source">Green Tech Innovations</h6>
+                        <p class="news-desc">Technological advancements are focusing on sustainability, with innovations in renewable energy ...</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://investorplace.com/2024/06/3-underappreciated-cybersecurity-stocks-to-buy-now/">
+                    <div class="card-header">
+                        <img src="./images/cyber.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Cybersecurity Threats and Solutions</h3>
+                        <h6 class="news-source">Increasing Cyber Threats</h6>
+                        <p class="news-desc">As cyber threats grow more sophisticated, companies and governments are investing heavily...</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://cointelegraph.com/news/blockchain-helps-harvesting-better-avocados-in-kenya-heres-how">
+                    <div class="card-header">
+                        <img src="./images/block.jpg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Blockchain and Cryptocurrencies</h3>
+                        <h6 class="news-source">The Rise of Digital Currencies</h6>
+                        <p class="news-desc">Blockchain technology and cryptocurrencies are transforming the financial landscape,...</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.microsoft.com/en-in/sustainability?ef_id=_k_276745786f7217828ad0232583cd121e_k_&OCID=AIDcmm36oobecd_SEM__k_276745786f7217828ad0232583cd121e_k_&msclkid=276745786f7217828ad0232583cd121e">
+                    <div class="card-header">
+                        <img src="./images/sub.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Sustainable Technology</h3>
+                        <h6 class="news-source">Green Tech Innovations</h6>
+                        <p class="news-desc">Technological advancements are focusing on sustainability, with innovations in renewable energy ...</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="cards-container container flex" id="cardscontainer3">
+            <div class="card">
+                <a href="https://www.yahoo.com/news/india-election-2024-live-exit-075724838.html?fr=sycsrp_catchall">
+                    <div class="card-header">
+                        <img src="./images/ele.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Elections and Political Changes</h3>
+                        <h6 class="news-source">Shifts in Political Power</h6>
+                        <p class="news-desc">Elections around the world bring about significant political changes. Countries like the United States, ..</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.wusf.org/2024-06-03/the-upside-down-american-flag-goes-mainstream-as-a-form-of-right-wing-protest">
+                    <div class="card-header">
+                        <img src="./images/pro.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Democratic Movements and Protests</h3>
+                        <h6 class="news-source">Protests for Freedom and Rights</h6>
+                        <p class="news-desc">Across the globe, citizens are engaging in protests to demand democratic reforms, human rights, and ...</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.yahoo.com/news/india-election-2024-live-exit-075724838.html?fr=sycsrp_catchall">
+                    <div class="card-header">
+                        <img src="./images/ele.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Elections and Political Changes</h3>
+                        <h6 class="news-source">Shifts in Political Power</h6>
+                        <p class="news-desc">Elections around the world bring about significant political changes. Countries like the United States, ..</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.wusf.org/2024-06-03/the-upside-down-american-flag-goes-mainstream-as-a-form-of-right-wing-protest">
+                    <div class="card-header">
+                        <img src="./images/pro.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Democratic Movements and Protests</h3>
+                        <h6 class="news-source">Protests for Freedom and Rights</h6>
+                        <p class="news-desc">Across the globe, citizens are engaging in protests to demand democratic reforms, human rights, and ...</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.yahoo.com/news/india-election-2024-live-exit-075724838.html?fr=sycsrp_catchall">
+                    <div class="card-header">
+                        <img src="./images/ele.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Elections and Political Changes</h3>
+                        <h6 class="news-source">Shifts in Political Power</h6>
+                        <p class="news-desc">Elections around the world bring about significant political changes. Countries like the United States, ..</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.wusf.org/2024-06-03/the-upside-down-american-flag-goes-mainstream-as-a-form-of-right-wing-protest">
+                    <div class="card-header">
+                        <img src="./images/pro.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Democratic Movements and Protests</h3>
+                        <h6 class="news-source">Protests for Freedom and Rights</h6>
+                        <p class="news-desc">Across the globe, citizens are engaging in protests to demand democratic reforms, human rights, and ...</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.yahoo.com/news/india-election-2024-live-exit-075724838.html?fr=sycsrp_catchall">
+                    <div class="card-header">
+                        <img src="./images/ele.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Elections and Political Changes</h3>
+                        <h6 class="news-source">Shifts in Political Power</h6>
+                        <p class="news-desc">Elections around the world bring about significant political changes. Countries like the United States, ..</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.wusf.org/2024-06-03/the-upside-down-american-flag-goes-mainstream-as-a-form-of-right-wing-protest">
+                    <div class="card-header">
+                        <img src="./images/pro.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Democratic Movements and Protests</h3>
+                        <h6 class="news-source">Protests for Freedom and Rights</h6>
+                        <p class="news-desc">Across the globe, citizens are engaging in protests to demand democratic reforms, human rights, and ...</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.yahoo.com/news/india-election-2024-live-exit-075724838.html?fr=sycsrp_catchall">
+                    <div class="card-header">
+                        <img src="./images/ele.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Elections and Political Changes</h3>
+                        <h6 class="news-source">Shifts in Political Power</h6>
+                        <p class="news-desc">Elections around the world bring about significant political changes. Countries like the United States, ..</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="cards-container container flex" id="cardscontainer4">
+            <div class="card">
+                <a href="https://www.onlineu.com/online-schools/open-admissions">
+                    <div class="card-header">
+                        <img src="./images/online-best.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>2024 Best Online Colleges</h3>
+                        <h6 class="news-source">Open Admissions</h6>
+                        <p class="news-desc">Colleges and universities with open enrollment policies enable prospective students to enroll throughout ...</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.careers360.com/">
+                    <div class="card-header">
+                        <img src="./images/college-rev.jpg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>College Reveiw</h3>
+                        <h6 class="news-source">Explore the verified reviews of various college</h6>
+                        <p class="news-desc">We ease your biggest doubts with personalized Video Counselling from our
+                            Curated Experts and Answers from the student community...</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.theceshop.com/mortgage/nmls-mortgage-loan-originator-license?utm_source=bing&utm_medium=cpc&utm_campaign=pre_us0_bng_sea_cpc_nbr_ces_mlo_nrt_dsk_nsl_c*458019629_ag*1178677479329062_u*bppc-pe-mlo-national&utm_content=-dc_pcrid_73667565098151_pkw_online%20mlo%20course_pmt_bb_slid__pgrid_1178677479329062_ptaid_kwd-73667539778156:loc-190&marketingcode=pre_us0_bng_sea_cpc_nbr_ces_mlo_nrt_dsk_nsl_c*458019629_ag*1178677479329062_u*bppc-pe-mlo-national&b_adgroup=MLO&b_adgroupid=1178677479329062&b_adid=73667565098151&b_campaign=MLO%20-%20Pre-Licensing%20-%20National%20-%20New%202024&b_campaignid=458019629&b_isproduct=&b_productid=&b_term=online%20mlo%20course&b_termid=kwd-73667539778156:loc-190&msclkid=d1620f0214b019cf6abd695fefcc3b29">
+                    <div class="card-header">
+                        <img src="./images/onli.avif" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Online Education and Exams</h3>
+                        <h6 class="news-source">For every student, every classroom.</h6>
+                        <p class="news-desc">We’re a nonprofit with the mission to provide a free, world-class education for anyone, anywhere.....</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.sarkariresult.app/">
+                    <div class="card-header">
+                        <img src="./images/sar.jpg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Exam</h3>
+                        <h6 class="news-source">Every day updated exam</h6>
+                        <p class="news-desc">Find updates on Sarkari Result, Sarkari Naukri, Sarkari Jobs and Sarkari Exams in various sectors such as Railway, Bank, SSC, Army, Navy,...</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.sarkariresult.com/#google_vignette">
+                    <div class="card-header">
+                        <img src="./images/result.png" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Results</h3>
+                        <h6 class="news-source">All results</h6>
+                        <p class="news-desc">Sarkari Result: SarkariResult.com provides you all the latest Sarkari Results, Sarkari Naukri Jobs in various sectors such as Railway, Bank, SSC,...</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.onlineu.com/online-schools/open-admissions">
+                    <div class="card-header">
+                        <img src="./images/online-best.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>2024 Best Online Colleges</h3>
+                        <h6 class="news-source">Open Admissions</h6>
+                        <p class="news-desc">Colleges and universities with open enrollment policies enable prospective students to enroll throughout ...</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.careers360.com/">
+                    <div class="card-header">
+                        <img src="./images/college-rev.jpg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>College Reveiw</h3>
+                        <h6 class="news-source">Explore the verified reviews of various college</h6>
+                        <p class="news-desc">We ease your biggest doubts with personalized Video Counselling from our
+                            Curated Experts and Answers from the student community...</p>
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+
+        <div class="cards-container container flex" id="cardscontainer5">
+            <div class="card">
+                <a href="https://internshala.com/">
+                    <div class="card-header">
+                        <img src="./images/intern.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Internship</h3>
+                        <h6 class="news-source">IT Sector</h6>
+                        <p class="news-desc">Latest internships on Internshala...</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://internshala.com/">
+                    <div class="card-header">
+                        <img src="./images/full.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Full Time</h3>
+                        <h6 class="news-source">All Jobs</h6>
+                        <p class="news-desc">Make your dream career a reality....</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://internshala.com/">
+                    <div class="card-header">
+                        <img src="./images/part.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Part Time</h3>
+                        <h6 class="news-source">All Jobs</h6>
+                        <p class="news-desc">India is a beacon of religious tolerance, where diverse faiths flourish in harmony....</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.sarkariresult.com/latestjob/">
+                    <div class="card-header">
+                        <img src="./images/gover.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Government Job</h3>
+                        <h6 class="news-source">All sector</h6>
+                        <p class="news-desc">Indian cuisine is a captivating blend of flavors, aromas, and spices, offering a unique culinary experience....</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://internshala.com/">
+                    <div class="card-header">
+                        <img src="./images/intern.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Internship</h3>
+                        <h6 class="news-source">IT Sector</h6>
+                        <p class="news-desc">Latest internships on Internshala...</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://internshala.com/">
+                    <div class="card-header">
+                        <img src="./images/full.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Full Time</h3>
+                        <h6 class="news-source">All Jobs</h6>
+                        <p class="news-desc">Make your dream career a reality....</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://internshala.com/">
+                    <div class="card-header">
+                        <img src="./images/part.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Part Time</h3>
+                        <h6 class="news-source">All Jobs</h6>
+                        <p class="news-desc">India is a beacon of religious tolerance, where diverse faiths flourish in harmony....</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.sarkariresult.com/latestjob/">
+                    <div class="card-header">
+                        <img src="./images/gover.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Government Job</h3>
+                        <h6 class="news-source">All sector</h6>
+                        <p class="news-desc">Indian cuisine is a captivating blend of flavors, aromas, and spices, offering a unique culinary experience....</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://in.indeed.com/?r=us">
+                    <div class="card-header">
+                        <img src="./images/indeed.jpeg" alt="India Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Private job</h3>
+                        <h6 class="news-source">All sector</h6>
+                        <p class="news-desc">With Indeed, you can search millions of jobs online to find the next step in your career. With tools for job search, resumes, company reviews and more,...</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
